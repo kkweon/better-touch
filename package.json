@@ -11,7 +11,8 @@
   "private": false,
   "scripts": {
     "build": "tsc",
-    "lint": "tslint -p ."
+    "lint": "tslint -p .",
+    "test": "yarn lint"
   },
   "devDependencies": {
     "@types/shelljs": "latest",
