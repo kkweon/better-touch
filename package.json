@@ -5,7 +5,16 @@
   "main": "dist/index.js",
   "bin": "bin/better-touch",
   "types": "dist/index.d.ts",
-  "repository": "https://github.com/kkweon/better-touch",
+  "repository": "github:kkweon/better-touch",
+  "homepage": "https://github.com/kkweon/better-touch",
+  "engines": {
+    "node": "*"
+  },
+  "keywords": [
+    "shell",
+    "touch"
+  ],
+  "bugs": "https://github.com/kkweon/better-touch/issues",
   "author": "Mo Kweon",
   "license": "MIT",
   "private": false,
