@@ -1,6 +1,6 @@
 {
   "name": "better-touch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Shell touch replacement",
   "main": "dist/index.js",
   "bin": "bin/better-touch",
