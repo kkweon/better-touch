@@ -1,0 +1,20 @@
+#!/usr/bin/env node
+
+const program = require("commander");
+const betterTouch = require("../dist").default;
+const packageJson = require("../package.json");
+const { version, description } = packageJson;
+
+program
+  .version(version)
+  .usage("[option] <file ...>")
+  .option("-f, --force", "Force overwrite if the file exists")
+  .parse(process.argv);
+
+const maybeFiles = program.args;
+
+if (maybeFiles.length === 0) {
+  console.log("Please provide filename");
+}
+
+maybeFiles.forEach(fileName => betterTouch(fileName, program.force));
